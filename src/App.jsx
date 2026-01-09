@@ -12,7 +12,7 @@ const App = () => {
     price: 12,
     strength: 6,
     agility: 4,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/0c2d6b.png',
+    img: '/images/zombies/survivor.png',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const App = () => {
     price: 10,
     strength: 5,
     agility: 5,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/033a16.png',
+    img: '/images/zombies/scavenger.png',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const App = () => {
     price: 18,
     strength: 7,
     agility: 8,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/262c36.png',
+    img: '/images/zombies/shadow.png',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const App = () => {
     price: 14,
     strength: 7,
     agility: 6,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/3c1e70.png',
+    img: '/images/zombies/tracker.png',
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const App = () => {
     price: 20,
     strength: 6,
     agility: 8,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/4b2900.png',
+    img: '/images/zombies/sharpshooter.png',
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const App = () => {
     price: 15,
     strength: 5,
     agility: 7,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5a1e02.png',
+    img: '/images/zombies/medic.png',
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const App = () => {
     price: 16,
     strength: 6,
     agility: 5,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e.png',
+    img: '/images/zombies/engineer.png',
   },
   {
     id: 8,
@@ -68,7 +68,7 @@ const App = () => {
     price: 11,
     strength: 8,
     agility: 3,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/67060c.png',
+    img: '/images/zombies/brawler.png',
   },
   {
     id: 9,
@@ -76,7 +76,7 @@ const App = () => {
     price: 17,
     strength: 5,
     agility: 9,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/ac3220.png',
+    img: '/images/zombies/infiltrator.png',
   },
   {
     id: 10,
@@ -84,7 +84,7 @@ const App = () => {
     price: 22,
     strength: 7,
     agility: 6,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/e41f26.png',
+    img: '/images/zombies/leader.png',
   },
 
   ]);
@@ -123,9 +123,12 @@ const totalAgility = team.reduce((sum, fighter) => sum + fighter.agility, 0);
 return (
   <div>
     <h1>Zombie Fighters</h1>
-    <p>Money: ${money}</p>
-    <p>Team Strength: {totalStrength}</p>
-    <p>Team Agility: {totalAgility}</p>
+    
+    <div className="team-stats">
+      <p>Money: ${money}</p>
+      <p>Team Strength: {totalStrength}</p>
+      <p>Team Agility: {totalAgility}</p>
+    </div>
 
     <h2>Team</h2>
     {team.length === 0 ? (

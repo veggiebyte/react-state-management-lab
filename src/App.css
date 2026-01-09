@@ -7,10 +7,10 @@
 }
 
 body {
-  background-image: url('/images/zombie_bgd.png');
-  background-size: 50% 50%;
-  background-repeat: repeat;
-  background-position: top left;
+  background-image: url('/images/zombie_bgd.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -32,7 +32,7 @@ body {
 
 h1 {
   font-family: 'Flavors', cursive;
-  font-size: 4rem;
+  font-size: 5rem;
   color: #00ff00;
   text-align: center;
   margin-bottom: 30px;
@@ -82,7 +82,7 @@ li {
   list-style: none;
   background-color: #1a1a1a;
   padding: 20px;
-  border: 3px solid #ffffff;
+  border: 3px solid #c98909;
   border-radius: 12px;
   width: 200px;
   text-align: center;
@@ -111,13 +111,13 @@ li h3 {
 li p {
   font-size: 0.9rem;
   margin: 5px 0;
-  color: #ccc;
+  color: #ffffff;
 }
 
 button {
   margin-top: 12px;
   padding: 10px 20px;
-  background-color: #00ff00;
+  background-color: #c98909;
   color: #000000;
   border: none;
   border-radius: 6px;
